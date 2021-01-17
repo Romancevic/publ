@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.close{
+  align: right;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#date-time {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@keyframes nav-animation{
+    from {opacity: 1;}
+    to {opacity: 0.65;}
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    white-space: nowrap;
+    animation-name: nav-animation;
+    animation-duration: 6s;
+    margin:  30px 30px 0 30px;
+}
+
+html, body, #map {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#loadingMap {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    z-index: 99;
+    text-align: center;
+}
+
+#loadingGif {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+  }
+
+  #btnInfo {
+    position: absolute;
+    margin-left: 370;
+
+}
+
+#issPass {
+    font-weight: bold;
+}
+
+#selectCountry {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#btnDiv {
+    opacity: 0.65;
+    display: flex;
+    white-space: nowrap;
+    position: right;
+    padding: 1px;
+  	flex-wrap: nowrap;
+}
+
+@media (max-width: 798px) {
+
+    #btnISS, #btnInfo {
+      	padding: 1px;
+		align: center;
+        text-align: center;
+        max-width: 100px;
+    }
+
+  }
